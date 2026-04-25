@@ -80,14 +80,17 @@ export default function App() {
       {/* Header */}
       <header className="border-b border-black/10 px-6 py-6 flex justify-between items-center sticky top-0 bg-white/90 backdrop-blur-md z-50">
         <div 
-          className="h-10 cursor-pointer hover:opacity-80 transition-opacity"
+          className="flex items-center gap-4 cursor-pointer hover:opacity-80 transition-opacity"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           <img 
             src="https://res.cloudinary.com/dcdzuilxa/image/upload/v1777090963/sunglass-hut-logo.jpg_ni3uqe.png" 
             alt="Sunglass Hut" 
-            className="h-full object-contain"
+            className="h-10 object-contain"
           />
+          <span className="hidden md:block font-black uppercase tracking-tighter text-xl border-l-2 border-black pl-4">
+            Catálogo SLZ
+          </span>
         </div>
         <a 
           href={WHATSAPP_BASE_URL} 
